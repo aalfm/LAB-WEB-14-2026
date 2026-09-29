@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kueénak - Sederhana dalam Bentuk, Istimewa dalam Rasa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="pictures/icon.png" type= "image/x-icon">
+</head>
+
+<body class="m-0 bg-[#FCF2E3] text-[#3B0D00] font-[figtree]">
+
+<header class="sticky top-0 z-50 shadow-md">
+    <nav class="bg-[#3B0D00]">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+
+            <a href="#home" aria-label="Kueénak">
+                <img src="pictures/Logo Kueénak.png" alt="Logo Kueénak"
+                     class="w-24 sm:w-28">
+            </a>
+
+
+            <div class="hidden items-center gap-6 text-medium font-semibold  text-[#FCF2E3] md:flex">
+                <a href="#home" class="transition hover:text-[#D96A00]">Beranda</a>
+                <a href="#produk" class="transition hover:text-[#D96A00]">Produk</a>
+                <a href="#promo" class="transition hover:text-[#D96A00]">Promo</a>
+                <a href="#tentang" class="transition hover:text-[#D96A00]">Tentang Kami</a>
+                <a href="#pemesanan" class="transition hover:text-[#D96A00]">Pemesanan</a>
+                <a href="#kontak" class="transition hover:text-[#D96A00]">Kontak</a>
+            </div>
+
+            <details class="relative md:hidden">
+                <summary class="cursor-pointer list-none rounded-lg px-3 py-2 text-2xl text-[#FCF2E3]">☰</summary>
+                    <div class="absolute right-0 mt-2 w-48 rounded-xl bg-[#3B0D00] p-3 shadow-xl">
+                        <a href="#home" class="block rounded px-3 py-2 text-[#FCF2E3] hover:bg-[#5A2A18]">Beranda</a>
+                        <a href="#produk" class="block rounded px-3 py-2 text-[#FCF2E3] hover:bg-[#5A2A18]">Produk</a>
+                        <a href="#promo" class="block rounded px-3 py-2 text-[#FCF2E3] hover:bg-[#5A2A18]">Promo</a>
+                        <a href="#tentang" class="block rounded px-3 py-2 text-[#FCF2E3] hover:bg-[#5A2A18]">Tentang Kami</a>
+                        <a href="#pemesanan" class="block rounded px-3 py-2 text-[#FCF2E3] hover:bg-[#5A2A18]">Pemesanan</a>
+                        <a href="#kontak" class="block rounded px-3 py-2 text-[#FCF2E3] hover:bg-[#5A2A18]">Kontak</a>
+                    </div>
+            </details>
+        </div>
+    </nav>
+</header>
+
+<main>
+<section id="home" class="overflow-hidden">
+    <img src="pictures/bg.png" 
+        alt="Latar Beranda"
+        class="absolute inset-0 w-full object-cover z-0 mt-38 sm:hidden md:block h-10/11 lg:block h-6/8"
+    >
+    <div class="grid min-h-[650px] items-center gap-10 py-16 lg:grid-cols-[1.05fr_0.95fr] sm:pl-4 md:pl-4 lg:pl-10">
+        <div class="z-10">
+            <p class="mb-4 text-sm font-bold tracking-widest text-[#D96A00]">✦ KUE TRADISIONAL INDONESIA</p>
+            <h1 class="max-w-2xl text-4xl font-extrabold leading-tight text-[#3B0D00] sm:text-5xl lg:text-6xl">
+                Sederhana dalam Bentuk,<br>
+                Istimewa dalam Rasa
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-[#5A2A18]">
+                Pilihan kue tradisional dengan rasa autentik untuk menemani berbagai kesempatan.
+            </p>
+            <p class="max-w-xl text-lg leading-8 text-[#5A2A18]">
+                Sajian sederhana dengan cita rasa istimewa. Rasa autentik, selalu Kueénak.
+            </p>
+
+            <a href="#produk"
+               class="mt-8 inline-block rounded-xl bg-[#411D01] px-6 py-4 font-bold text-[#FCF2E3] shadow-lg transition hover:-translate-y-1 hover:bg-[#5A2A18]">
+                Lihat Produk Kami →
+            </a>
+
+            <div class="mt-10 grid max-w-xl grid-cols-3 gap-3 text-sm">
+                <div class="border-r border-[#D9B99B] pr-3">
+                    <span class="text-xl">◉</span>
+                    <p class="mt-1 font-bold">Dibuat<br>Teliti</p>
+                </div>
+                <div class="border-r border-[#D9B99B] pr-3">
+                    <span class="text-xl">✦</span>
+                    <p class="mt-1 font-bold">Cita Rasa<br>Tradisional</p>
+                </div>
+                <div>
+                    <span class="text-xl">☆</span>
+                    <p class="mt-1 font-bold">Bahan<br>Berkualitas</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center lg:justify-end">
+            <img src="pictures/Foto Beranda.png" alt="Aneka kue tradisional Kueénak"
+                 class="mr-0 object-containt drop-shadow-xl sm:hidden md:hidden lg:block">
+        </div>
+    </div>
+</section>
+
+<section id="produk" class="scroll-mt-20 py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="mb-8">
+            <p class="text-sm font-bold tracking-widest text-[#D96A00]">PILIHAN KUEÉNAK</p>
+            <h2 class="mt-2 text-4xl font-extrabold text-[#3B0D00]">Produk Kami</h2>
+            <p class="mt-3 text-[#5A2A18]">Nikmati berbagai pilihan kue dengan cita rasa tradisional yang dibuat dengan teliti.</p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="overflow-hidden rounded-2xl border border-[#D9B99B] bg-[#F4E3CE] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <img src="pictures/Kue Cantik Manis.png" alt="Kue Cantik Manis" class="h-56 w-full object-contain p-4">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Kue Cantik Manis</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#5A2A18]">Kue tradisional lembut dengan rasa manis dan tekstur yang nikmat.</p>
+                    <p class="mt-4 text-lg font-extrabold text-[#A94F0B]">Rp15.000</p>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-[#D9B99B] bg-[#F4E3CE] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <img src="pictures/Kue Apang Kenari.png" alt="Kue Apang Kenari" class="h-56 w-full object-contain p-4">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Kue Apang Kenari</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#5A2A18]">Kue khas dengan aroma rempah dan taburan kenari yang gurih.</p>
+                    <p class="mt-4 text-lg font-extrabold text-[#A94F0B]">Rp18.000</p>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-[#D9B99B] bg-[#F4E3CE] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <img src="pictures/Kue Biji Nangka.png" alt="Kue Biji Nangka" class="h-56 w-full object-contain p-4">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Kue Biji Nangka</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#5A2A18]">Kue lembut dengan cita rasa manis khas yang menggugah selera.</p>
+                    <p class="mt-4 text-lg font-extrabold text-[#A94F0B]">Rp20.000</p>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-[#D9B99B] bg-[#F4E3CE] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <img src="pictures/Brownies.png" alt="Brownies Kueénak" class="h-56 w-full object-contain p-4">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Brownies</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#5A2A18]">Brownies cokelat lembut dengan topping pilihan.</p>
+                    <p class="mt-4 text-lg font-extrabold text-[#A94F0B]">Rp25.000</p>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-[#D9B99B] bg-[#F4E3CE] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <img src="pictures/Bolu Pisang.png" alt="Bolu Pisang" class="h-56 w-full object-contain p-4">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Bolu Pisang</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#5A2A18]">Bolu lembut dengan aroma pisang yang harum.</p>
+                    <p class="mt-4 text-lg font-extrabold text-[#A94F0B]">Rp22.000</p>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-2xl border border-[#D9B99B] bg-[#F4E3CE] shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <img src="pictures/Pie Buah.png" alt="Pie Buah" class="h-56 w-full object-contain p-4">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Pie Buah</h3>
+                    <p class="mt-2 text-sm leading-6 text-[#5A2A18]">Pie renyah dengan krim lembut dan buah segar.</p>
+                    <p class="mt-4 text-lg font-extrabold text-[#A94F0B]">Rp20.000</p>
+                </div>
+            </article>
+        </div>
+
+        <p class="mt-8 text-center italic text-[#5A2A18]">Dibuat dengan teliti, disajikan dengan hati.</p>
+    </div>
+</section>
+
+<section id="promo" class="scroll-mt-20">
+    <div class="grid lg:grid-cols-2">
+        <div class="min-h-[420px]">
+            <img src="pictures/Promo.png" alt="Kue dan kopi sebagai bagian dari promo Kueénak"
+                 class="h-full w-full object-cover">
+        </div>
+        <div class="relative overflow-hidden bg-[#411D01] px-8 py-16 text-[#FCF2E3] sm:px-12 lg:px-16">
+            <p class="font-bold tracking-widest text-[#D96A00]">✦ PENAWARAN SPESIAL</p>
+            <div class="my-5 h-px bg-[#D96A00]"></div>
+            <h2 class="text-4xl font-extrabold leading-tight sm:text-5xl">Lebih Kueénak,<br>Lebih Hemat.</h2>
+            <p class="mt-6 text-xl">Dapatkan penawaran spesial <strong>mulai 10%</strong> lebih hemat.</p>
+            <p class="mt-4 text-sm">✦ Berlaku untuk produk pilihan</p>
+            <img src="pictures/Gelombang.png"
+                alt="Dekorasi gelombang promo Kueénak"
+                class="sm:hidden md:hidden lg:block absolute bottom-0 left-0 w-full object-cover">
+        </div>
+    </div>
+</section>
+
+<section id="tentang" class="scroll-mt-20 py-20">
+    <div class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-10">
+        <div>
+            <p class="text-sm font-bold tracking-widest text-[#D96A00]">TENTANG KAMI</p>
+            
+            <h2 class="text-4xl font-extrabold leading-tight">Membawa Cita Rasa<br>Tradisional Lebih Dekat</h2>
+            <p class="mt-6 text-lg leading-8">
+                Kueénak hadir untuk menjaga cita rasa kue tradisional agar tetap menjadi bagian dari keseharian.
+            </p>
+            <p class="mt-4 text-lg leading-8">
+                Kami memilih bahan dengan perhatian dan menyajikan setiap kue dengan proses yang teliti, tanpa menghilangkan rasa autentiknya.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                <div class="rounded-xl border border-[#D9B99B] p-4">
+                    <span class="text-xl">◉</span>
+                    <p class="mt-2 font-bold">Dibuat Teliti</p>
+                </div>
+                <div class="rounded-xl border border-[#D9B99B] p-4">
+                    <span class="text-xl">✦</span>
+                    <p class="mt-2 font-bold">Cita Rasa Tradisional</p>
+                </div>
+                <div class="rounded-xl border border-[#D9B99B] p-4">
+                    <span class="text-xl">☆</span>
+                    <p class="mt-2 font-bold">Bahan Berkualitas</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <img src="pictures/Toko Kueénak.png" alt="Toko Kueénak"
+                 class="w-full max-w-xl rounded-2xl object-cover shadow-lg">
+        </div>
+    </div>
+</section>
+
+<section id="galeri" class="scroll-mt-20 py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="mb-10 text-center">
+            <p class="text-sm font-bold tracking-widest text-[#D96A00]">GALERI KUEÉNAK</p>
+            <h2 class="mt-2 text-4xl font-extrabold">Sajian Kueénak</h2>
+        </div>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <figure class="text-center">
+                <img src="pictures/Kue Cantik Manis.png" alt="Kue Cantik Manis"
+                     class="mx-auto h-64 w-full rounded-2xl bg-[#F4E3CE] object-contain p-4 shadow-sm">
+                <figcaption class="mt-4 font-bold">Kue Cantik Manis</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img src="pictures/Kue Apang Kenari.png" alt="Kue Apang Kenari"
+                     class="mx-auto h-64 w-full rounded-2xl bg-[#F4E3CE] object-contain p-4 shadow-sm">
+                <figcaption class="mt-4 font-bold">Kue Apang Kenari</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img src="pictures/Pie Buah.png" alt="Pie Buah"
+                     class="mx-auto h-64 w-full rounded-2xl bg-[#F4E3CE] object-contain p-4 shadow-sm">
+                <figcaption class="mt-4 font-bold">Pie Buah</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section id="multimedia" class="scroll-mt-20 py-16">
+    <div class="mx-auto max-w-5xl px-6 text-center">
+        <p class="text-sm font-bold tracking-widest text-[#D96A00]">CERITA KUEÉNAK</p>
+        <h2 class="mt-2 text-4xl font-extrabold">Proses dan Cita Rasa</h2>
+        <p class="mx-auto mt-4 max-w-xl text-[#5A2A18]">
+            Kenali lebih dekat dunia Kueénak melalui video berikut.
+        </p>
+        <video controls poster="pictures/Toko Kueénak.png"
+               class="mx-auto mt-8 w-full rounded-2xl shadow-lg">
+            <source src="pictures/Profil kueénak.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+        </video>
+    </div>
+</section>
+
+<section id="pemesanan" class="scroll-mt-20 py-20">
+    <div class="mx-auto max-w-3xl px-6">
+        <div class="text-center">
+            <p class="text-sm font-bold tracking-widest text-[#D96A00]">PESAN SEKARANG</p>
+            <h2 class="mt-2 text-4xl font-extrabold">Pesan Kueénak</h2>
+            <p class="mt-4 text-[#5A2A18]">Pilih kue favoritmu dan nikmati cita rasa tradisional Kueénak.</p>
+        </div>
+
+        <form method="POST" action="#" class="mt-10 rounded-2xl border border-[#D9B99B] bg-[#F4E3CE] p-6 shadow-lg sm:p-8">
+            <fieldset>
+                <legend class="text-xl font-bold">Formulir Pemesanan</legend>
+
+                <div class="mt-6 grid gap-5">
+                    <div>
+                        <label for="nama" class="mb-2 block font-semibold">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required
+                               class="w-full rounded-lg border border-[#C9A987] bg-[#FCF2E3] px-4 py-3 outline-none focus:border-[#D96A00] focus:ring-2 focus:ring-[#D96A00]/20">
+                    </div>
+
+                    <div>
+                        <label for="email" class="mb-2 block font-semibold">Email</label>
+                        <input type="email" id="email" name="email" required
+                               class="w-full rounded-lg border border-[#C9A987] bg-[#FCF2E3] px-4 py-3 outline-none focus:border-[#D96A00] focus:ring-2 focus:ring-[#D96A00]/20">
+                    </div>
+
+                    <div>
+                        <label for="produk_pesanan" class="mb-2 block font-semibold">Pilih Produk</label>
+                        <select id="produk_pesanan" name="produk_pesanan"
+                                class="w-full rounded-lg border border-[#C9A987] bg-[#FCF2E3] px-4 py-3 outline-none focus:border-[#D96A00] focus:ring-2 focus:ring-[#D96A00]/20">
+                            <option value="cantik-manis">Kue Cantik Manis</option>
+                            <option value="apang-kenari">Kue Apang Kenari</option>
+                            <option value="biji-nangka">Kue Biji Nangka</option>
+                            <option value="brownies">Brownies</option>
+                            <option value="bolu-pisang">Bolu Pisang</option>
+                            <option value="pie-buah">Pie Buah</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="jumlah" class="mb-2 block font-semibold">Jumlah Pesanan</label>
+                        <input type="number" id="jumlah" name="jumlah" min="1" required
+                               class="w-full rounded-lg border border-[#C9A987] bg-[#FCF2E3] px-4 py-3 outline-none focus:border-[#D96A00] focus:ring-2 focus:ring-[#D96A00]/20">
+                    </div>
+
+                    <fieldset class="rounded-lg border border-[#C9A987] p-4">
+                        <legend class="px-2 font-semibold">Metode Pengiriman</legend>
+                        <div class="mt-2 flex flex-wrap gap-6">
+                            <label class="flex items-center gap-2">
+                                <input type="radio" id="reguler" name="pengiriman" value="reguler" checked
+                                       class="accent-[#411D01]">
+                                Reguler
+                            </label>
+                            <label class="flex items-center gap-2">
+                                <input type="radio" id="ekspres" name="pengiriman" value="ekspres"
+                                       class="accent-[#411D01]">
+                                Ekspres
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div>
+                        <label for="pesan" class="mb-2 block font-semibold">Pesan Tambahan</label>
+                        <textarea id="pesan" name="pesan" rows="5"
+                                  class="w-full rounded-lg border border-[#C9A987] bg-[#FCF2E3] px-4 py-3 outline-none focus:border-[#D96A00] focus:ring-2 focus:ring-[#D96A00]/20"></textarea>
+                    </div>
+
+                    <label class="flex items-start gap-3">
+                        <input type="checkbox" id="setuju" name="setuju" required class="mt-1 accent-[#411D01]">
+                        <span>Saya menyetujui syarat dan ketentuan pemesanan.</span>
+                    </label>
+
+                    <button type="submit"
+                            class="w-full rounded-xl bg-[#411D01] px-6 py-3 font-bold text-[#FCF2E3] transition hover:bg-[#5A2A18]">
+                        Kirim Pesanan
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+<section id="kontak" class="scroll-mt-20 py-16">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+        <p class="text-sm font-bold tracking-widest text-[#D96A00]">HUBUNGI KAMI</p>
+        <h2 class="mt-2 text-4xl font-extrabold">Kontak Kueénak</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-[#5A2A18]">
+            Ingin bertanya atau melakukan pemesanan? Hubungi Kueénak melalui kontak berikut.
+        </p>
+
+        <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
+            <a href="https://www.instagram.com/" target="_blank"
+               class="rounded-lg border border-[#D9B99B] px-5 py-3 font-semibold transition hover:bg-[#F4E3CE]">
+                📷 Instagram Kueénak
+            </a>
+            <a href="mailto:kueénak@gmail.com"
+               class="rounded-lg border border-[#D9B99B] px-5 py-3 font-semibold transition hover:bg-[#F4E3CE]">
+                ✉ kueénak@gmail.com
+            </a>
+            <a href="tel:+6281234567890"
+               class="rounded-lg border border-[#D9B99B] px-5 py-3 font-semibold transition hover:bg-[#F4E3CE]">
+                ☎ 0812-3456-7890
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="bg-[#3B0D00] px-6 py-12 text-center text-[#FCF2E3]">
+    <h2 class="text-3xl font-extrabold">Kueénak</h2>
+    <p class="mt-2">Sederhana dalam Bentuk, Istimewa dalam Rasa.</p>
+
+    <div class="mt-6 flex flex-wrap justify-center gap-5">
+        <a href="https://www.instagram.com/" target="_blank" class="transition hover:text-[#D96A00]">📷 Instagram</a>
+        <a href="mailto:kueenak@gmail.com" class="transition hover:text-[#D96A00]">✉ Email</a>
+        <a href="tel:+6281234567890" class="transition hover:text-[#D96A00]">☎ Telepon</a>
+    </div>
+
+    <div class="mx-auto my-6 h-px max-w-xl bg-[#5A2A18]"></div>
+    <p class="text-sm text-[#E8D3C0]">&copy; 2026 Kueénak. Dibuat oleh Andi Alifah Mahrani.</p>
+</footer>
+
+</body>
+</html>
