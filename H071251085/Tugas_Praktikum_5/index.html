@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Tugas Tim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen text-gray-800">
+    <div class="max-w-6xl mx-auto p-6">
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-blue-700">
+                Manajemen Tugas Tim
+            </h1>
+            <p class="text-gray-500 mt-2">
+                Kelola tugas dan pantau progres setiap anggota tim.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section class="bg-white p-5 rounded-xl shadow">
+                <h2 class="text-xl font-semibold mb-4">
+                    Daftar Anggota
+                </h2>
+
+                <p id="statusAnggota"
+                   class="text-gray-500 mb-3">
+                    Memuat anggota...
+                </p>
+
+                <div id="daftarAnggota"
+                     class="flex flex-col gap-2"></div>
+            </section>
+
+            <section class="md:col-span-2 bg-white p-5 rounded-xl shadow">
+                <h2 id="judulTugas"
+                    class="text-xl font-semibold mb-2">
+                    Pilih Anggota
+                </h2>
+
+                <div class="mb-4">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+                        <p id="progres" class="text-gray-600">
+                            Pilih anggota untuk melihat tugas.
+                        </p>
+                        <span id="persentaseProgres" class="text-sm font-semibold text-green-700">0%</span>
+                    </div>
+                    <div
+                        class="w-full h-2.5 bg-gray-200 rounded-full overflow-hidden"
+                        role="progressbar"
+                        aria-label="Progres penyelesaian tugas"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="0"
+                        id="wadahProgres">
+                        <div
+                            id="progressBar"
+                            class="h-full bg-green-600 rounded-full transition-all duration-500 ease-out"
+                            style="width: 0%">
+                        </div>
+                    </div>
+                </div>
+
+                <p id="statusTugas"
+                   class="text-gray-500 mb-3"></p>
+
+                <div class="mb-4">
+                    <label for="pencarian"
+                           class="block mb-2 font-medium">
+                        Cari tugas
+                    </label>
+
+                    <input
+                        type="text"
+                        id="pencarian"
+                        placeholder="Masukkan judul tugas..."
+                        class="w-full border rounded-lg px-4 py-2
+                               focus:outline-none focus:ring-2
+                               focus:ring-blue-400"
+                    >
+                </div>
+
+                <form id="formTugas" class="mb-5">
+                    <label for="judulBaru"
+                           class="block mb-2 font-medium">
+                        Tambah tugas baru
+                    </label>
+
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <input
+                            type="text"
+                            id="judulBaru"
+                            placeholder="Judul tugas (minimal 5 karakter)"
+                            class="flex-1 border rounded-lg px-4 py-2
+                                   focus:outline-none focus:ring-2
+                                   focus:ring-green-400"
+                        >
+
+                        <button
+                            type="submit"
+                            id="tombolSimpan"
+                            class="bg-green-600 text-white px-5 py-2
+                                   rounded-lg hover:bg-green-700">
+                            Simpan
+                        </button>
+                    </div>
+
+                    <p id="pesanForm"
+                       class="mt-2 text-sm"></p>
+                </form>
+
+                <p id="notifikasi"
+                   class="hidden bg-green-100 text-green-700
+                          p-3 rounded-lg mb-4">
+                </p>
+
+                <p id="pesanPencarian"
+                   class="hidden text-gray-500 mb-3">
+                    Tidak ada tugas yang cocok.
+                </p>
+
+                <div id="daftarTugas"
+                     class="flex flex-col gap-3"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
