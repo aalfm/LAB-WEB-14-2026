@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root { font-family: "Manrope", sans-serif; color: #10233f; background: #eaf5ff; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { margin: 0; min-width: 320px; background: #eaf5ff; color: #10233f; }
+::selection { background: #8bd3ff; color: #10233f; }
+.mono { font-family: "DM Mono", monospace; }
+.dot-grid { background-image: radial-gradient(#a8cbe8 0.8px, transparent 0.8px); background-size: 17px 17px; }
+.hero-title { letter-spacing: -0.085em; line-height: .92; }
+.outline-text { color: transparent; -webkit-text-stroke: 1.5px #10233f; }
+.project-image { transition: transform .55s cubic-bezier(.2,.7,.2,1); }
+.project-card:hover .project-image { transform: scale(1.035); }
+.reveal-line { width: 100%; height: 1px; background: #c4ddf3; }
